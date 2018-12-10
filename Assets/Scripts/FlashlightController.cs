@@ -14,7 +14,7 @@ public class FlashlightController : MonoBehaviour {
     protected virtual void OnEnable()
     {
         lightBulb = GetComponentInChildren<Light>();
-        flashlightLit = false;
+        flashlightLit = true;
         ToggleFlashlight(flashlightLit);
 
         linkedObject = (linkedObject == null ? GetComponent<VRTK_InteractableObject>() : linkedObject);
